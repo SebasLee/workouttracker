@@ -1,14 +1,12 @@
-/*
-const express = require('express'); 
-const app = express();
+const express = require('express');
+const router = express.Router();
 
-const PUSH = require('../models/push.js');
+const CHEST = require('../models/chestTri');
 
 router.get('/', (req, res) => {
     res.render('index', {
-      pushes: PUSH,
+      pushday: CHEST,
     })
   });
 
 module.exports = router;
-*/

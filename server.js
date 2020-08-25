@@ -1,7 +1,7 @@
 const express = require('express'); 
 const app = express();
 
-const {chestTri} = require('./models/chestTri');
+const chestTri = require('./models/chestTri');
 
 app.set('view engine', 'ejs');
 
@@ -14,7 +14,7 @@ app.get ('/chestTri/', (req, res) => {
 */
 app.get('/', (req,res)=>{
     res.render('index',
-    {pushday: chestTri},
+    {pushday: chestTri,}
     )
   });
 

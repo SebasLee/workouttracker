@@ -8,9 +8,9 @@
     </head>
     <body>
         <h1>Work Out Tracker</h1>
-         <h2>Learn More</h2>
-            <h3><%= pushday %></h3>
-        <!--Add workout data-->
+        <% for (let i = 0; i < chestTri.length; i++) { %>
+            <h4><%= chestTri[i].name %></h4>
+        <% } %>
          <h2>Your Workouts</h2>
          <button>Create Workout</button>
 

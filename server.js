@@ -14,7 +14,7 @@ app.get ('/chestTri/', (req, res) => {
 */
 app.get('/', (req,res)=>{
     res.render('index',
-      {pushday: chestTri},
+    {pushday: chestTri},
     )
   });
 
@@ -25,5 +25,5 @@ app.get('*', (req, res) => {
   });
 
 app.listen(4000, ()=>{
-    console.log("I am listening");
+    console.log("I am listening port 4000");
 });

@@ -20,7 +20,7 @@ const chestTri = [
       recommended: "3 Sets x 12-15 Reps"
     }
   ];
-
+/*
   const backBi = [
     {
       name: "Pull-Ups",
@@ -66,6 +66,6 @@ const chestTri = [
       recommended: "3 Sets x 10-12 Reps"
     }
   ];
-  
+  */
    module.exports = chestTri;
-   module.exports = backBi;
+   //module.exports = backBi;

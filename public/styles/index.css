@@ -2,15 +2,20 @@ body {
     background-image: url("../images/projectimage.jpeg");
     background-size: cover;
     font-family: 'Teko', sans-serif;
+    color: #413F3F;
 }
 
 nav {
     font-size: 22px;
 }
 
+#workoutbutton {
+    margin-right: 10px;
+}
+
 h1 {
-    color: #413F3F;
     text-align: center;
+    font-size: 35px;
 }
 
 h4 {

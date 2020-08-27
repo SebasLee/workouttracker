@@ -39,7 +39,7 @@ app.get('/learn/:index', (req, res) => {
 */
 
 // CSS connection
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(`${__dirname}/public`));
 
 app.get('/', (request, response) => {
   response.send('<h1>Workout Tracker Empty Page</h1>');

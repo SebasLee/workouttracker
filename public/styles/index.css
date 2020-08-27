@@ -1,4 +1,18 @@
+body {
+    background-image: url("../images/projectimage.jpeg");
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+}
+
+nav {
+    font-size: 22px;
+}
+
 h1 {
-    color: blue;
+    color: #413F3F;
     text-align: center;
+}
+
+h4 {
+    font-size: 27px;
 }

@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./pubic/index.css">
-        <title>Workout Tracker</title>
-    </head>
-    <body>
-        <h1>Work Out Tracker</h1>
-         
-        <% for (let i = 0; i <pushday.length; i++) { %>
-            <h4><%= pushday[i].name %></h4>
-        <% } %>
-        
-         <h2>Your Workouts</h2>
-         <button>Create Workout</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Tracker</title>
+</head>
+<body>
 
-    </body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/workouts">Workouts</a>
+      <a href="/workouts/new">Add Workout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Workouts Index Page</h1>
+    <% if (workouts.length) { %>
+      <% for (let i = 0; i < workouts.length; i++) { %>
+        <a href="/workouts/<%= workouts[i]._id %>">
+          <h4><%= workouts[i].name %></h4>
+        </a>
+        <!-- Delete Button -->
+        <form style="display: inline-block;" method="POST" action="/workouts/<%= workouts[i]._id %>?_method=DELETE">
+          <button type="submit">Delete</button>
+        </form>
+        <a href="/workouts/<%= workouts[i]._id %>/edit">
+          <button>Edit</button>
+        </a>
+        <hr/>
+      <% } %>
+    <% } else { %>
+      <h4>No workouts</h4>
+    <% } %>
+  </main>
+
+</body>
 </html>

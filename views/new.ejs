@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Tracker</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/workouts">Workouts</a>
+      <a href="/workouts/new">Add Workout</a>
+    </nav>
+  </header>
+
+<main>
+  <h1>Add New Workout</h1>
+    <form action="/workouts" method="POST">
+      What's your workout name?: <input type="text" name="name" /> <br/><br/>
+      Create and plan your workout: <textarea rows="5" cols="30" name="cardio" ></textarea> <br/><br/>
+      <button type="submit">Add Workout</button>
+    </form>
+</main>
+
+</body>
+</html>

@@ -17,6 +17,9 @@
 
   <main>
     <h1>Workout Tracker</h1>
+
+    <a href="/learn">Learn More</a>
+
     <% if (workouts.length) { %>
       <% for (let i = 0; i < workouts.length; i++) { %>
         <a href="/workouts/<%= workouts[i]._id %>">

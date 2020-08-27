@@ -1,4 +1,3 @@
-/*
 const learnExercises = [
     {
      name: "Cardio",
@@ -23,4 +22,4 @@ const learnExercises = [
   ];
   
    module.exports = learnExercises
-   */
+   

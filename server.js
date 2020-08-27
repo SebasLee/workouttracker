@@ -3,6 +3,7 @@ const methodOverride = require('method-override');
 const app = express(); 
 const PORT = process.env.PORT || 4000;
 const workoutsController = require('./controllers/workoutsController');
+//const LEARN = require('./models/learnExercises');
 
 app.set('view engine', 'ejs');
 
@@ -17,6 +18,25 @@ app.use((req, res, next) => {
   console.log(`${method} ${url} ${timeStamp}`);
   next();
 });
+
+// Learn Section
+/*
+app.get('/', (req, res) => {
+  res.redirect('/learn');
+})
+
+app.get('/learn', (req, res) => {
+  res.render('index', 
+    {learn: LEARN},
+  )
+});
+
+app.get('/learn/:index', (req, res) => {
+  res.render('show', {
+  learn: LEARN[req.params.index]
+  })
+});
+*/
 
 // CSS connection
 app.use(express.static(__dirname + '/public'));

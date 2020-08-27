@@ -18,7 +18,6 @@
 
   <main>
     <h1>Workout Tracker</h1>
-
     <% if (workouts.length) { %>
       <% for (let i = 0; i < workouts.length; i++) { %>
         <a href="/workouts/<%= workouts[i]._id %>">
@@ -36,7 +35,7 @@
     <% } else { %>
       <h4>No workouts</h4>
     <% } %>
-    
+
   </main>
 
 </body>

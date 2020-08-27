@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/index.css" />
   <title>Workout Tracker</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
   </header>
 
   <main>
-    <h1>Workouts Index Page</h1>
+    <h1>Workout Tracker</h1>
+
     <% if (workouts.length) { %>
       <% for (let i = 0; i < workouts.length; i++) { %>
         <a href="/workouts/<%= workouts[i]._id %>">
@@ -34,6 +36,7 @@
     <% } else { %>
       <h4>No workouts</h4>
     <% } %>
+    
   </main>
 
 </body>

@@ -42,7 +42,7 @@ app.get('/learn/:index', (req, res) => {
 app.use(express.static(`${__dirname}/public`));
 
 app.get('/', (request, response) => {
-  response.send('<h1>Workout Tracker Empty Page</h1>');
+  response.redirect('/workouts');
 });
 
 app.use('/workouts', workoutsController);

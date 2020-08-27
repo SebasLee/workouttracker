@@ -1,13 +1,14 @@
 const mongoose = require('mongoose');
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/workout';
+const MONGOPROJECT = process.env.MONGOPROJECT || `mongodb+srv://SebasLee:Videocraze98@sebaslee.ozqfl.mongodb.net/Workouttracker?retryWrites=true&w=majority
+`;
 
-mongoose.connect(MONGODB_URI, {
+mongoose.connect(MONGOPROJECT, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: false,
 })
-  .then(() => console.log(`MongoDB connected successfully at ${MONGODB_URI}`)) // Success Handler
+  .then(() => console.log(`MongoDB connected successfully at ${MONGOPROJECT}`)) // Success Handler
   .catch((err) => console.log(`MongoDB connection error: ${err}`)) // Error Handler
 
 module.exports = {

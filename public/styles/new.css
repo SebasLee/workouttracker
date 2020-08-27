@@ -1,3 +1,16 @@
-h1 {
-    color: blue;
+body {
+    background-image: url("../images/projectimage2.jpg");
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    color: #C26E27;
+
+}
+
+nav {
+    margin-left: 30px;
+}
+
+.workoutbutton {
+    padding-right: 10px;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Tracker</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/workouts">Workouts</a>
+      <a href="/workouts/new">Add Workout</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Edit Workout</h1>
+
+    <form action="/workouts/<%= workout._id %>?_method=PUT" method="POST">
+      Name: <input type="text" name="name" value="<%= workout.name %>" /> <br/><br/>
+      Plan: <input type="text" name="plan" value="<%= workout.plan %>" /> <br/><br/>
+      <button type="submit">Edit Workout</button>
+    </form>
+
+  </main>
+
+</body>
+</html>

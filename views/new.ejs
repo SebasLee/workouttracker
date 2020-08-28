@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/styles/new.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+  <title>Workout Tracker</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/workouts" id="workoutbutton">Workouts</a>
+      <a href="/workouts/new">Add Workout</a>
+    </nav>
+  </header>
+
+<main>
+  <h1>Add New Workout</h1>
+    <form action="/workouts" method="POST">
+      What's your workout name?: <input type="text" name="name" /> <br/><br/>
+      What are your goals this time?: <textarea rows="5" cols="30" name="cardio" ></textarea> <br/><br/>
+
+      <label for="jumpingjacks">Jumping Jacks</label>
+      <input type="checkbox" name="jumpingjacks" value="true"/>
+      <label for="burpees">Burpees</label>
+      <input type="checkbox" name="burpees" value="true"/>
+      <label for="pushups">Push-Ups</label>
+      <input type="checkbox" name="pushups" value="true"/>
+      <label for="dips">Dips</label>
+      <input type="checkbox" name="dips" value="true"/>
+      <label for="benchpress">Bench Press</label>
+      <input type="checkbox" name="benchpress" value="true"/>
+      <label for="pullups">Pull-Ups</label>
+      <input type="checkbox" name="pullups" value="true"/>
+      <label for="dumbbellrow">Dumbbell Row</label>
+      <input type="checkbox" name="dumbbellrow" value="true"/>
+      <label for="superman">Superman</label>
+      <input type="checkbox" name="superman" value="true"/>
+      <label for="crunches">Crunches</label>
+      <input type="checkbox" name="crunches" value="true"/>
+      <label for="bicycle">Bicycle</label>
+      <input type="checkbox" name="bicycle" value="true"/>
+      <label for="leglifts">Leg Lifts</label>
+      <input type="checkbox" name="leglifts" value="true"/>
+      <label for="planks">Planks</label>
+      <input type="checkbox" name="planks" value="true"/>
+
+      <button type="submit">Add Workout</button>
+    </form>
+</main>
+
+</body>
+</html>

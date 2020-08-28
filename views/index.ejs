@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/index.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+  <title>Workout Tracker</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/workouts" id="workoutbutton">Workouts</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Workout Tracker</h1>
+
+    <a href="/learn">Learn More</a>
+
+    <% if (workouts.length) { %>
+      <% for (let i = 0; i < workouts.length; i++) { %>
+        <a href="/workouts/<%= workouts[i]._id %>">
+          <h4><%= workouts[i].name %></h4>
+        </a>
+        <!-- Delete Button -->
+        <form style="display: inline-block;" method="POST" action="/workouts/<%= workouts[i]._id %>?_method=DELETE">
+          <button type="submit">Delete</button>
+        </form>
+        <a href="/workouts/<%= workouts[i]._id %>/edit">
+          <button>Edit</button>
+        </a>
+        <hr/>
+      <% } %>
+    <% } else { %>
+      <h4>No workouts</h4>
+    <% } %>
+    <a href="/workouts/new" id="addworkout">Add Workout</a>
+
+  </main>
+
+</body>
+</html>

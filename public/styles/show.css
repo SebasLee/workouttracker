@@ -1,3 +1,10 @@
-h1 {
-    color: blue;
+body {
+    background-image: url("../images/projectimage2.jpg");
+}
+
+main {
+    font-family: 'Teko', sans-serif;
+    margin-left: 30px;
+    color: #1EBD10;
+    font-size: 27px;
 }

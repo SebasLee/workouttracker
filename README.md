@@ -18,7 +18,7 @@ https://github.com/SebasLee/workouttracker
 # Programming issues
 Solving the back-end codign was difficult, so I definitely had to reach out to others for assistance. The complexity of it required me to simplify my app and go somewhat off course from my original wireframes and ERD's, but I think I still learned a lt about back-end programming in the end. An unsolved problem that I have is the edit feature, since it takes me to a strange page where things seemingly restart. Additionally since I focused so much on the back-end, I only had little time to work on the front-end, so that will definitely be something to work on in the future. 
 
-
+Wireframes and ERD's in images directory
 
 
 

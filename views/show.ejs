@@ -25,11 +25,61 @@
       </p>
       <p>
         <!-- <%= workout.burpees %> -->
+        <% if (workout.jumpingjacks) { %>
+          <p>Jumping Jacks</p>
+        <% } else { %>
+          <p></p>
+          <% } %>
         <% if (workout.burpees) { %>
           <p>Burpees</p>
         <% } else { %>
           <p></p>
           <% } %>
+        <% if (workout.dips) { %>
+          <p>Dips</p>
+        <% } else { %>
+          <p></p>
+          <% } %>
+        <% if (workout.benchpress) { %>
+           <p>Bench-Press</p>
+        <% } else { %>
+          <p></p>
+          <% } %> 
+        <% if (workout.pullups) { %>
+          <p>Pull-Ups</p>
+        <% } else { %>
+          <p></p>
+          <% } %>
+        <% if (workout.dumbbellrow) { %>
+          <p>Dumbbell Row</p>
+        <% } else { %>
+          <p></p>
+          <% } %> 
+        <% if (workout.superman) { %>
+          <p>Superman</p>
+        <% } else { %>
+          <p></p>
+          <% } %>  
+        <% if (workout.crunches) { %>
+          <p>Crunches</p>
+        <% } else { %>
+          <p></p>
+          <% } %>
+        <% if (workout.bicycle) { %>
+          <p>Bicycle</p>
+        <% } else { %>
+          <p></p>
+          <% } %> 
+        <% if (workout.leglifts) { %>
+          <p>Leg Lifts</p>
+        <% } else { %>
+          <p></p>
+          <% } %>
+        <% if (workout.planks) { %>
+          <p>Planks</p>
+        <% } else { %>
+          <p></p>
+          <% } %>     
       </p>
   </main>
 

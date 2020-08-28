@@ -20,10 +20,32 @@
   <h1>Add New Workout</h1>
     <form action="/workouts" method="POST">
       What's your workout name?: <input type="text" name="name" /> <br/><br/>
-      Create and plan your workout: <textarea rows="5" cols="30" name="cardio" ></textarea> <br/><br/>
+      What are your goals this time?: <textarea rows="5" cols="30" name="cardio" ></textarea> <br/><br/>
 
+      <label for="jumpingjacks">Jumping Jacks</label>
+      <input type="checkbox" name="jumpingjacks" value="true"/>
       <label for="burpees">Burpees</label>
       <input type="checkbox" name="burpees" value="true"/>
+      <label for="pushups">Push-Ups</label>
+      <input type="checkbox" name="pushups" value="true"/>
+      <label for="dips">Dips</label>
+      <input type="checkbox" name="dips" value="true"/>
+      <label for="benchpress">Bench Press</label>
+      <input type="checkbox" name="benchpress" value="true"/>
+      <label for="pullups">Pull-Ups</label>
+      <input type="checkbox" name="pullups" value="true"/>
+      <label for="dumbbellrow">Dumbbell Row</label>
+      <input type="checkbox" name="dumbbellrow" value="true"/>
+      <label for="superman">Superman</label>
+      <input type="checkbox" name="superman" value="true"/>
+      <label for="crunches">Crunches</label>
+      <input type="checkbox" name="crunches" value="true"/>
+      <label for="bicycle">Bicycle</label>
+      <input type="checkbox" name="bicycle" value="true"/>
+      <label for="leglifts">Leg Lifts</label>
+      <input type="checkbox" name="leglifts" value="true"/>
+      <label for="planks">Planks</label>
+      <input type="checkbox" name="planks" value="true"/>
 
       <button type="submit">Add Workout</button>
     </form>
